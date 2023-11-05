@@ -3,7 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MEDIADESIGNERHUB</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <div class="logotype">
+        <a href="index.html"><h4>MEDIADESIGNERHUB</h4></a>
+      </div>
+      <div class="desktop-gutter">
+        <button type="button" class="button-link" id="design">
+          <p>Design</p>
+        </button>
+        <button type="button" class="button-link" id="dev">
+          <p>Development</p>
+        </button>
+      </div>
+      <div class="mobile-gutter">
+        <!-- hidden when in desktop query -->
+        <input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
+        <label class="button-link" for="nav-toggle">
+          <p>Menu</p>
+        </label>
+      </div>
+    </nav>
+  </body>
 </html>
