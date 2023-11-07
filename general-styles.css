@@ -28,9 +28,8 @@ h1,
 h2,
 h3,
 h4,
-h5,
-  {
-  color: var(--text-color)
+h5 {
+  color: var(--text-color);
 }
 
 p {
@@ -63,11 +62,16 @@ label {
 /* nav base */
 nav {
   width: 100%;
-  background-color: var(--white-color);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  color: var(--text-color);
   display: flex;
-  align-items: center;
   padding: 1rem;
   justify-content: space-between;
+  align-items: center;
+  background: var(--white-color);
+  z-index: 1000;
 }
 
 nav .mobile-gutter {
@@ -85,13 +89,24 @@ nav .desktop-gutter {
 }
 
 .nav {
-  display: ;
+  width: 100%;
+  display: flex;
 }
 
 /* responsive navbar */
 @media (max-width: 480px) {
   nav {
-    padding: 0.75rem;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    color: var(--text-color);
+    display: flex;
+    padding: 1rem 0.75rem;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white-color);
+    z-index: 1000;
   }
 
   nav .mobile-gutter {
@@ -155,4 +170,10 @@ nav .desktop-gutter {
   #nav-toggle:checked+label+.nav::before {
     opacity: 1
   }
+
+  #nav-toggle:checked+label+.nav .nav-list {
+    right: 0;
+    /* Slide in to be fully visible */
+  }
+}
 }
