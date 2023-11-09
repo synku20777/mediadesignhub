@@ -1,0 +1,54 @@
+:root {
+  --theory: #497587;
+  --methodology: #864DE4;
+  --principle: #697532;
+  --background-color: #FEFAF6;
+  --text-color: #181E32;
+  --white-color: #FCFEFE;
+  --font-family-sans: 'Robot Mono', sans-serif;
+  --font-family-serif: 'Robot Mono', serif;
+}
+
+main {
+  padding: 2rem;
+}
+
+.tile-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 0px;
+}
+
+.tile {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 7rem;
+  border-radius: 1rem;
+  border: 1px solid var(--text-color);
+  padding: 1.5rem;
+  background-color: #FCFEFE;
+}
+
+#Principles h2 {
+  color: #697532;
+}
+
+#Theory h2 {
+  color: #497587;
+}
+
+#Methodologies {
+  grid-column: 1 / -1;
+}
+
+#Methodologies h2 {
+  color: var(--methodology);
+}
+
+@media (max-width: 480px) {
+  .tile-grid {
+    grid-template-columns: 1fr;
+  }
+}

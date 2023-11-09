@@ -20,8 +20,9 @@
 }
 
 body {
+  width: 100%;
   font-family: var(--font-family-sans);
-  background-color: var(--background-color)
+  background-color: var(--background-color);
 }
 
 .icon {
@@ -93,6 +94,15 @@ ul {
   list-style-type: none;
 }
 
+.link {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.link a {
+  text-decoration: none;
+  color: #181E32;
+}
 
 /* nav base */
 nav {
