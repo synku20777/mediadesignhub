@@ -1,0 +1,46 @@
+.mainbar {
+  position: absolute;
+  top: 40%;
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 4rem;
+  /* Adjust the gap as needed */
+  justify-items: center;
+  /* This centers the items horizontally in their cell */
+  align-items: start;
+  /* This aligns the items to the top of their cell */
+}
+
+@keyframes rolling-text {
+  0% {
+    transform: translateX(100vw);
+    /* Start just off the right edge of the screen */
+  }
+
+  100% {
+    transform: translateX(-100%);
+    /* End just off the left edge of the screen */
+  }
+}
+
+.rolling-text {
+  width: 100vw;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+}
+
+.text-rolling {
+  color: var(--text-color);
+  display: inherit;
+  line-height: 100%;
+  font-size: 15rem;
+  font-weight: 700;
+  text-align: center;
+  white-space: nowrap;
+  animation: rolling-text 500s linear infinite;
+}

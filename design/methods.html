@@ -3,7 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Design</title>
+    <link rel="stylesheet" href="../general-styles.css" />
   </head>
-  <body></body>
+  <body>
+    <nav>
+      <div class="logotype">
+        <a href="../index.html"><h4>MEDIADESIGNERHUB</h4></a>
+      </div>
+      <div class="desktop-gutter">
+        <button type="button" class="button-link" id="design">
+          <p>Design</p>
+        </button>
+        <button type="button" class="button-link" id="dev">
+          <p>Development</p>
+        </button>
+      </div>
+      <div class="mobile-gutter">
+        <!-- hidden when in desktop query -->
+        <input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
+        <label class="button-link" for="nav-toggle">
+          <p>Menu</p>
+        </label>
+        <div class="nav">
+          <div class="nav-list">
+            <label for="nav-toggle" class="button-primary" id="close">
+              <img src="assets/icons/cross.svg" alt="Close Menu" />
+            </label>
+            <div class="input-wrapper">
+              <img class="icon" src="assets/icons/search.svg" alt="search" />
+              <input
+                type="text"
+                placeholder="Search"
+                autocomplete="off"
+                class="input-hidden"
+              />
+            </div>
+            <ul>
+              <li><a href="">Design</a></li>
+              <li><a href="">Development</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </body>
 </html>
