@@ -26,6 +26,7 @@ body {
 }
 
 .icon {
+  max-height: none;
   width: auto;
   height: 100%;
 }
@@ -86,7 +87,7 @@ label {
   gap: 1rem;
 }
 
-.button-link a {
+a .button-link {
   text-decoration: none;
 }
 
