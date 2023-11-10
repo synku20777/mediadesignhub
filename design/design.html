@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design</title>
+    <title>Development</title>
     <link rel="stylesheet" href="../general-styles.css" />
+    <link rel="stylesheet" href="../hub.css" />
   </head>
   <body>
     <nav>
       <div class="logotype">
-        <a href="../index.html"><h4>MEDIADESIGNERHUB</h4></a>
+        <a href="../index.html"><h4>Design Hub</h4></a>
       </div>
       <div class="desktop-gutter">
         <button type="button" class="button-link" id="design">
@@ -41,11 +42,53 @@
             </div>
             <ul>
               <li><a href="">Design</a></li>
-              <li><a href="">Development</a></li>
+              <li><a href="">Design</a></li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
+    <main>
+      <div aria-label="breadcrumbs">
+        <ul class="breadcrumb">
+          <li><a class="navigation-link" href="../index.html">Hub</a></li>
+          <li>
+            <img class="icon" src="../assets/icons/chevron_right.svg" alt=">" />
+          </li>
+          <li>
+            <a class="navigation-link" href="design.html">Design</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tile-grid">
+        <a href="principles.html">
+          <div class="tile" id="Principles">
+            <h2>Principles</h2>
+            <div class="link">
+              <p>Open Library</p>
+              <img src="../assets/icons/chevron_right.svg" alt="forward" />
+            </div>
+          </div>
+        </a>
+        <a href="theories.html">
+          <div class="tile" id="Theory">
+            <h2>Theory</h2>
+            <div class="link">
+              <p>Open Library</p>
+              <img src="../assets/icons/chevron_right.svg" alt="forward" />
+            </div>
+          </div>
+        </a>
+        <a href="methods.html" id="Methodologies">
+          <div class="tile">
+            <h2>Methodologies</h2>
+            <div class="link">
+              <p>Open Library</p>
+              <img src="../assets/icons/chevron_right.svg" alt="forward" />
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
   </body>
 </html>

@@ -10,7 +10,7 @@
 }
 
 main {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .tile-grid {
@@ -22,6 +22,7 @@ main {
 }
 
 .tile {
+  width: 100%;
   display: inline-flex;
   flex-direction: column;
   gap: 7rem;

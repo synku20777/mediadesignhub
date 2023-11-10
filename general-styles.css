@@ -138,6 +138,25 @@ nav .desktop-gutter {
   display: flex;
 }
 
+.breadcrumb {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.breadcrumb li {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Add a separator between breadcrumb items */
+.breadcrumb li+li:before {
+  margin: 0 5;
+}
+
+
 /* responsive navbar */
 @media (max-width: 480px) {
 
