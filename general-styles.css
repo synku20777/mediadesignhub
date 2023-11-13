@@ -31,14 +31,6 @@ body {
   height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  color: var(--text-color);
-}
-
 h1 {
   font-size: 2.5rem;
 }
@@ -87,8 +79,12 @@ label {
   gap: 1rem;
 }
 
-a .button-link {
+a {
   text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
 }
 
 ul {
@@ -98,12 +94,11 @@ ul {
 .link {
   display: flex;
   gap: 0.5rem;
+  color: #181E32;
+  text-decoration: none;
 }
 
-.link a {
-  text-decoration: none;
-  color: #181E32;
-}
+/* .link a {} */
 
 /* nav base */
 nav {
@@ -304,6 +299,7 @@ nav .desktop-gutter {
 
 main {
   height: 100%;
+  width: 100%;
   margin-top: 4.75rem;
   display: inline-flex;
   flex-direction: column;

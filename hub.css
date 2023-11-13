@@ -14,7 +14,7 @@ main {
 }
 
 .tile-grid {
-  width: 100%;
+  width: 45%;
   display: grid;
   grid-template-columns: repeat(2, minmax(280px, 1fr));
   gap: 1rem;
@@ -22,7 +22,6 @@ main {
 }
 
 .tile {
-  width: 100%;
   display: inline-flex;
   flex-direction: column;
   gap: 7rem;
@@ -45,6 +44,18 @@ main {
 }
 
 #Methodologies h2 {
+  color: var(--methodology);
+}
+
+.tile-net {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.tile.methologies {
   color: var(--methodology);
 }
 
