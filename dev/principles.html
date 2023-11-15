@@ -8,48 +8,56 @@
     <link rel="stylesheet" href="../hub.css" />
   </head>
   <body>
-    <nav>
-      <div class="logotype">
-        <a href="../index.html"><h4>Development Hub</h4></a>
-      </div>
-      <div class="desktop-gutter">
-        <button type="button" class="button-link" id="design">
-          <p>Design</p>
-        </button>
-        <button type="button" class="button-link" id="dev">
-          <p>Development</p>
-        </button>
-      </div>
-      <div class="mobile-gutter">
-        <!-- hidden when in desktop query -->
-        <input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
-        <label class="button-link" for="nav-toggle">
-          <p>Menu</p>
-        </label>
-        <div class="nav">
-          <div class="nav-list">
-            <label for="nav-toggle" class="button-primary" id="close">
-              <img src="assets/icons/cross.svg" alt="Close Menu" />
-            </label>
-            <div class="input-wrapper">
-              <img class="icon" src="assets/icons/search.svg" alt="search" />
-              <input
-                type="text"
-                placeholder="Search"
-                autocomplete="off"
-                class="input-hidden"
-              />
+    <header>
+      <nav aria-label="Main navigation" class="header">
+        <div class="logotype">
+          <a href="../index.html"><h4>Development Hub</h4></a>
+        </div>
+        <div class="desktop-gutter">
+          <a href="../design/design.html" class="button-link" id="design"
+            >Design</a
+          >
+          <a href="dev.html" class="button-link" id="dev">Development</a>
+        </div>
+        <div class="mobile-gutter">
+          <input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
+          <label class="button-link" for="nav-toggle">
+            <p>Menu</p>
+          </label>
+          <div class="nav" aria-hidden="true">
+            <div class="nav-list">
+              <label
+                for="nav-toggle"
+                class="link"
+                id="close"
+                aria-label="Close Menu"
+              >
+                <img src="../assets/icons/cross.svg" alt="Close Menu" />
+              </label>
+              <div class="input-wrapper">
+                <img
+                  class="icon"
+                  src="../assets/icons/search.svg"
+                  alt="Search"
+                />
+                <input
+                  type="search"
+                  placeholder="Search"
+                  autocomplete="off"
+                  aria-label="Search"
+                />
+              </div>
+              <ul>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="../dev/dev.html">Development</a></li>
+              </ul>
             </div>
-            <ul>
-              <li><a href="">Design</a></li>
-              <li><a href="">Development</a></li>
-            </ul>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main>
-      <div aria-label="breadcrumbs">
+      <nav aria-label="breadcrumbs">
         <ul class="breadcrumb">
           <li><a class="navigation-link" href="../index.html">Hub </a></li>
           <li>
@@ -63,40 +71,46 @@
             <a class="navigation-link" href="principles.html">Principles</a>
           </li>
         </ul>
-      </div>
+      </nav>
       <div><h1 id="Principles">Development Principles</h1></div>
-      <div class="tile-net">
+      <section class="tile-net">
         <a class="tile" href=""
           ><h3>Don't Repeat Yourself</h3>
           <div class="link">
             <p>Open Library</p>
-            <img src="../assets/icons/chevron_right.svg" alt="forward" /></div
+            <img
+              src="../assets/icons/chevron_right.svg"
+              alt="Don't Repeat Yourself"
+            /></div
         ></a>
         <a class="tile" href=""
           ><h3>Keep It Simple, Stupid</h3>
           <div class="link">
             <p>Open Library</p>
-            <img src="../assets/icons/chevron_right.svg" alt="forward" /></div
+            <img
+              src="../assets/icons/chevron_right.svg"
+              alt="Keep It Simple, Stupid"
+            /></div
         ></a>
         <a class="tile" href=""
           ><h3>You Aren't Gonna Need It</h3>
           <div class="link">
             <p>Open Library</p>
-            <img src="../assets/icons/chevron_right.svg" alt="forward" /></div
+            <img
+              src="../assets/icons/chevron_right.svg"
+              alt="You Aren't Gonna Need It"
+            /></div
         ></a>
         <a class="tile" href=""
           ><h3>Don’t Make Me Think</h3>
           <div class="link">
             <p>Open Library</p>
-            <img src="../assets/icons/chevron_right.svg" alt="forward" /></div
+            <img
+              src="../assets/icons/chevron_right.svg"
+              alt="Don’t Make Me Think"
+            /></div
         ></a>
-        <!-- <a class="tile" href=""
-          ><h3>Idiotproof design</h3>
-          <div class="link">
-            <p>Open Library</p>
-            <img src="../assets/icons/chevron_right.svg" alt="forward" /></div
-        ></a> -->
-      </div>
+      </section>
     </main>
   </body>
 </html>

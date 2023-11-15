@@ -8,71 +8,84 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <nav>
-      <div class="logotype">
-        <a href="index.html"><h4>Mediadesigner Hub</h4></a>
-      </div>
-      <div class="desktop-gutter">
-        <button type="button" class="button-link" id="design">
-          <p>Design</p>
-        </button>
-        <button type="button" class="button-link" id="dev">
-          <p>Development</p>
-        </button>
-      </div>
-      <div class="mobile-gutter">
-        <!-- hidden when in desktop query -->
-        <input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
-        <label class="button-link" for="nav-toggle">
-          <p>Menu</p>
-        </label>
-        <div class="nav">
-          <div class="nav-list">
-            <label for="nav-toggle" class="link" id="close">
-              <img src="assets/icons/cross.svg" alt="Close Menu" />
-            </label>
-            <div class="input-wrapper">
-              <img class="icon" src="assets/icons/search.svg" alt="search" />
-              <input
-                type="text"
-                placeholder="Search"
-                autocomplete="off"
-                class="input-hidden"
-              />
+    <header>
+      <nav aria-label="Main navigation" class="header">
+        <div class="logotype">
+          <a href="index.html" aria-label="Mediadesigner Hub Home"
+            ><h4>Mediadesigner Hub</h4></a
+          >
+        </div>
+        <div class="desktop-gutter">
+          <a
+            href="design/design.html"
+            class="button-link"
+            id="design"
+            aria-label="Design Hub"
+            >Design</a
+          >
+          <a
+            href="dev/dev.html"
+            class="button-link"
+            id="dev"
+            aria-label="Development Hub"
+            >Development</a
+          >
+        </div>
+        <div class="mobile-gutter">
+          <!-- hidden when in desktop query -->
+          <button aria-label="Toggle Menu" id="nav-toggle" class="button-link">
+            <span>Menu</span>
+          </button>
+          <div class="nav" aria-hidden="true">
+            <div class="nav-list">
+              <button aria-label="Close Menu" id="close" class="link">
+                <img src="assets/icons/cross.svg" alt="Close Menu" />
+              </button>
+              <div class="input-wrapper">
+                <img class="icon" src="assets/icons/search.svg" alt="Search" />
+                <input
+                  type="search"
+                  placeholder="Search"
+                  autocomplete="off"
+                  aria-label="Search"
+                />
+              </div>
+              <ul>
+                <li><a href="design/design.html">Design</a></li>
+                <li><a href="dev/dev.html">Development</a></li>
+              </ul>
             </div>
-            <ul>
-              <li><a href="design/design.html">Design</a></li>
-              <li><a href="dev/dev.html">Development</a></li>
-            </ul>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main>
-      <div class="mainbar">
-        <a href="design/design.html" class="button-link" id="Design">
-          <h1>Design</h1>
-          <img
-            src="assets/icons/chevron_right.svg"
-            alt="go further"
-            class="icon"
-          />
-        </a>
-        <a href="dev/dev.html" class="button-link" id="development">
-          <h1>Development</h1>
-          <img
-            src="assets/icons/chevron_right.svg"
-            alt="go further"
-            class="icon"
-          />
-        </a>
-      </div>
-      <div class="rolling-text">
-        <div class="text-rolling">
-          MEDIADESIGNERHUB MEDIADESIGNERHUB MEDIADESIGNERHUB MEDIADESIGNERHUB
-          MEDIADESIGNERHUB MEDIADESIGNERHUB MEDIADESIGNERHUB MEDIADESIGNERHUB
+      <section aria-label="Main Content">
+        <div class="mainbar">
+          <a href="design/design.html" class="button-link" id="Design">
+            <h2>Design</h2>
+            <img
+              src="assets/icons/chevron_right.svg"
+              alt="Read more about Design"
+              class="icon"
+            />
+          </a>
+          <a href="dev/dev.html" class="button-link" id="development">
+            <h2>Development</h2>
+            <img
+              src="assets/icons/chevron_right.svg"
+              alt="Read more about Development"
+              class="icon"
+            />
+          </a>
         </div>
-      </div>
+        <div class="rolling-text" aria-hidden="true">
+          <div class="text-rolling">
+            MEDIADESIGNERHUB MEDIADESIGNERHUB MEDIADESIGNERHUB MEDIADESIGNERHUB
+            MEDIADESIGNERHUB MEDIADESIGNERHUB MEDIADESIGNERHUB MEDIADESIGNERHUB
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

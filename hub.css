@@ -5,8 +5,8 @@
   --background-color: #FEFAF6;
   --text-color: #181E32;
   --white-color: #FCFEFE;
-  --font-family-sans: 'Robot Mono', sans-serif;
-  --font-family-serif: 'Robot Mono', serif;
+  --font-family-sans: 'Roboto Mono', sans-serif;
+  --font-family-serif: 'Roboto Mono', serif;
 }
 
 main {
@@ -18,36 +18,37 @@ main {
   display: grid;
   grid-template-columns: repeat(2, minmax(280px, 1fr));
   gap: 1rem;
-  margin: 0px;
+  margin: 0;
+}
+
+.tile {
+  display: inline-flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 8rem;
+  justify-content: space-between;
+  border-radius: 1rem;
+  border: 1px solid var(--text-color);
+  padding: 1.5rem;
+  background-color: var(--white-color);
 }
 
 .tile#n1 {
   max-width: 400px;
 }
 
-.tile {
-  display: inline-flex;
-  flex-direction: column;
-  gap: 7rem;
-  border-radius: 1rem;
-  border: 1px solid var(--text-color);
-  padding: 1.5rem;
-  background-color: #FCFEFE;
-}
-
 #Principles {
-  color: #697532;
+  color: var(--principle);
 }
 
 #Theory {
-  color: #497587;
+  color: var(--theory);
 }
 
 #Methodologies {
   grid-column: 1 / -1;
   color: var(--methodology);
 }
-
 
 .tile-net {
   width: 100%;

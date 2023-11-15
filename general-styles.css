@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono&display=swap');
 
 *,
 ::after,
@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--font-family-sans);
 }
 
 :root {
@@ -15,24 +16,37 @@
   --background-color: #FEFAF6;
   --text-color: #181E32;
   --white-color: #FCFEFE;
-  --font-family-sans: 'Robot Mono', sans-serif;
-  --font-family-serif: 'Robot Mono', serif;
+  --font-family-sans: 'Roboto Mono', sans-serif;
 }
 
 body {
   width: 100%;
-  font-family: var(--font-family-sans);
+  /* font-family: var(--font-family-sans); */
   background-color: var(--background-color);
 }
 
 .icon {
-  max-height: none;
-  width: auto;
   height: 100%;
+  /* Scale to the height of the parent */
+  width: auto;
+  /* Maintain aspect ratio */
+  max-height: 100%;
+  /* Ensure it doesn't exceed the parent's height */
+  object-fit: contain;
+  /* This ensures the image is scaled correctly within the bounds */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--font-family-sans);
+  letter-spacing: -0.4px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 h2 {
@@ -53,7 +67,6 @@ h5 {
 
 p {
   margin: 0;
-  font-family: sans-serif;
   font-size: 1rem;
 }
 
@@ -62,13 +75,14 @@ p {
 .logo a,
 button,
 label {
-  cursor: pointer
+  cursor: pointer;
 }
 
 .button-link,
 .button-outline,
 .button-primary,
 .button-secondary {
+  height: 100%;
   background-color: transparent;
   color: var(--text-color);
   display: flex;
@@ -81,9 +95,6 @@ label {
 
 a {
   text-decoration: none;
-}
-
-a:visited {
   color: inherit;
 }
 
@@ -94,18 +105,16 @@ ul {
 .link {
   display: flex;
   gap: 0.5rem;
-  color: #181E32;
+  color: var(--text-color);
   text-decoration: none;
+  align-items: center;
 }
 
-/* .link a {} */
-
-/* nav base */
-nav {
+.header {
   width: 100%;
   position: fixed;
-  top: 0%;
-  left: 0%;
+  top: 0;
+  left: 0;
   color: var(--text-color);
   display: flex;
   padding: 1rem;
@@ -146,74 +155,43 @@ nav .desktop-gutter {
   align-items: center;
 }
 
-
-/* Add a separator between breadcrumb items */
 .breadcrumb li+li:before {
-  margin: 0 5;
+  margin: 0 5px;
 }
 
-
-/* responsive navbar */
+/* Responsive navbar */
 @media (max-width: 480px) {
-
   * {
     font-size: 14px;
   }
 
-  nav {
-    width: 100%;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    color: var(--text-color);
-    display: flex;
+  .header {
     padding: 1rem 0.75rem;
-    justify-content: space-between;
-    align-items: center;
-    background: var(--white-color);
-    z-index: 1000;
   }
 
-  nav .mobile-gutter {
+  .header .mobile-gutter {
     display: flex;
   }
 
   .mobile-gutter .button-link {
     padding: .625rem 1.5rem;
-    ;
-    border-color: var(--text-color);
-    border-style: solid;
-    border-width: 1px;
+    border: 1px solid var(--text-color);
     border-radius: 1rem;
   }
 
   .hidden-checkbox {
-    display: none
-  }
-
-  nav .desktop-gutter {
     display: none;
   }
 
-  #nav-toggle:checked+label+.nav .nav-list {
-    right: 0
-  }
-
-  .input-hidden {
-    border: none;
-    padding: 0%;
+  .header .desktop-gutter {
+    display: none;
   }
 
   .input-wrapper {
     width: 100%;
     display: flex;
     padding: 0.75rem 0.5rem;
-    position: relative;
     gap: 0.5rem;
-    justify-content: left;
-    align-items: stretch;
-    align-self: stretch;
-    border-radius: 0%;
     border: 1px solid var(--text-color);
     background: var(--white-color);
     border-radius: 16px;
@@ -223,54 +201,35 @@ nav .desktop-gutter {
     width: 100%;
     padding-right: 30px;
     /* Space for the icon */
-  }
-
-  .input-wrapper input:focus {
     border: none;
     outline: none;
   }
 
   .nav .nav-list {
-    margin: 0;
-    padding: 1rem 1rem;
     display: flex;
+    margin: 0;
+    padding: 1rem;
     width: 50%;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
     position: absolute;
-    /* justify-content: flex-end; */
-    z-index: 1;
     top: 0;
     right: -100%;
     background: var(--background-color);
     transition: right 444ms ease-out;
     height: 100vh;
-    overflow-y: auto
-  }
-
-  .nav-list ul {
-    width: 100%;
-    margin: 0px;
-    padding: 0;
+    overflow-y: auto;
   }
 
   .nav-list li {
-    font-family: sans-serif;
-    color: var(--text-color);
     font-size: 1.25rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-    padding: 0.75rem 0rem;
+    padding: 0.75rem 0;
   }
 
   .nav-list li a {
     width: 100%;
-    display: inherit;
-    justify-content: inherit;
-    align-items: inherit;
+    display: flex;
   }
 
   .nav::before {
@@ -284,11 +243,11 @@ nav .desktop-gutter {
     z-index: -1;
     opacity: 0;
     transition: opacity .3s ease-in;
-    pointer-events: none
+    pointer-events: none;
   }
 
   #nav-toggle:checked+label+.nav::before {
-    opacity: 1
+    opacity: 1;
   }
 
   #nav-toggle:checked+label+.nav .nav-list {
@@ -298,8 +257,6 @@ nav .desktop-gutter {
 }
 
 main {
-  height: 100%;
-  width: 100%;
   margin-top: 4.75rem;
   display: inline-flex;
   flex-direction: column;

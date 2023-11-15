@@ -8,46 +8,52 @@
     <link rel="stylesheet" href="../hub.css" />
   </head>
   <body>
-    <nav>
-      <div class="logotype">
-        <a href="../index.html"><h4>Design Hub</h4></a>
-      </div>
-      <div class="desktop-gutter">
-        <button type="button" class="button-link" id="design">
-          <p>Design</p>
-        </button>
-        <button type="button" class="button-link" id="dev">
-          <p>Development</p>
-        </button>
-      </div>
-      <div class="mobile-gutter">
-        <!-- hidden when in desktop query -->
-        <input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
-        <label class="button-link" for="nav-toggle">
-          <p>Menu</p>
-        </label>
-        <div class="nav">
-          <div class="nav-list">
-            <label for="nav-toggle" class="link" id="close">
-              <img src="../assets/icons/cross.svg" alt="Close Menu" />
-            </label>
-            <div class="input-wrapper">
-              <img class="icon" src="../assets/icons/search.svg" alt="search" />
-              <input
-                type="text"
-                placeholder="Search"
-                autocomplete="off"
-                class="input-hidden"
-              />
+    <header>
+      <nav aria-label="Main navigation" class="header">
+        <div class="logotype">
+          <a href="../index.html"><h4>Design Hub</h4></a>
+        </div>
+        <div class="desktop-gutter">
+          <a href="design.html" class="button-link" id="design">Design</a>
+          <a href="../dev/dev.html" class="button-link" id="dev">Development</a>
+        </div>
+        <div class="mobile-gutter">
+          <input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
+          <label class="button-link" for="nav-toggle">
+            <p>Menu</p>
+          </label>
+          <div class="nav" aria-hidden="true">
+            <div class="nav-list">
+              <label
+                for="nav-toggle"
+                class="link"
+                id="close"
+                aria-label="Close Menu"
+              >
+                <img src="../assets/icons/cross.svg" alt="Close Menu" />
+              </label>
+              <div class="input-wrapper">
+                <img
+                  class="icon"
+                  src="../assets/icons/search.svg"
+                  alt="Search"
+                />
+                <input
+                  type="search"
+                  placeholder="Search"
+                  autocomplete="off"
+                  aria-label="Search"
+                />
+              </div>
+              <ul>
+                <li><a href="design.html">Design</a></li>
+                <li><a href="../dev/dev.html">Development</a></li>
+              </ul>
             </div>
-            <ul>
-              <li><a href="design.html">Design</a></li>
-              <li><a href="../dev/dev.html">Development</a></li>
-            </ul>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <main>
       <div aria-label="breadcrumbs">
         <ul class="breadcrumb">
@@ -60,29 +66,41 @@
           </li>
         </ul>
       </div>
-      <div class="tile-grid">
+      <section class="tile-grid">
         <a href="principles.html" class="tile" id="Principles">
           <h2>Principles</h2>
           <div class="link">
             <p>Open Library</p>
-            <img src="../assets/icons/chevron_right.svg" alt="forward" />
+            <img
+              class="icon"
+              src="../assets/icons/chevron_right.svg"
+              alt="Design Principles"
+            />
           </div>
         </a>
         <a href="theories.html" class="tile" id="Theory">
           <h2>Theory</h2>
           <div class="link">
             <p>Open Library</p>
-            <img src="../assets/icons/chevron_right.svg" alt="forward" />
+            <img
+              class="icon"
+              src="../assets/icons/chevron_right.svg"
+              alt="Design theories"
+            />
           </div>
         </a>
         <a href="methods.html" class="tile" id="Methodologies">
           <h2>Methodologies</h2>
           <div class="link">
             <p>Open Library</p>
-            <img src="../assets/icons/chevron_right.svg" alt="forward" />
+            <img
+              class="icon"
+              src="../assets/icons/chevron_right.svg"
+              alt="Design Methodologies"
+            />
           </div>
         </a>
-      </div>
+      </section>
     </main>
   </body>
 </html>
