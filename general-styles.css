@@ -254,6 +254,18 @@ nav .desktop-gutter {
     right: 0;
     /* Slide in to be fully visible */
   }
+
+  h1 {
+    font-size: 2.7rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.815rem;
+  }
 }
 
 main {
