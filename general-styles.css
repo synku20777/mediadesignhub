@@ -17,6 +17,7 @@
   --text-color: #181E32;
   --white-color: #FCFEFE;
   --font-family-sans: 'Roboto Mono', sans-serif;
+  line-height: 150%;
 }
 
 body {
@@ -43,6 +44,7 @@ h4,
 h5 {
   font-family: var(--font-family-sans);
   letter-spacing: -0.4px;
+  line-height: 150%;
 }
 
 h1 {
