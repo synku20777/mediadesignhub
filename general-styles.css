@@ -159,10 +159,11 @@ nav .desktop-gutter {
   margin: 0 5px;
 }
 
-/* Responsive navbar */
+/* fitting into mobile, don't need a tablet mode since everything fits well thanks to grid layout */
 @media (max-width: 480px) {
   * {
     font-size: 14px;
+    /* downsizing for aesthitic purposes, otherwise text looks grotesque (too big) on mobile (tested) */
   }
 
   .header {
@@ -182,6 +183,7 @@ nav .desktop-gutter {
   .hidden-checkbox {
     display: none;
   }
+
 
   .header .desktop-gutter {
     display: none;
@@ -269,6 +271,7 @@ nav .desktop-gutter {
 }
 
 main {
+  width: 85%;
   margin-top: 4.75rem;
   display: inline-flex;
   flex-direction: column;

@@ -32,17 +32,26 @@
           >
         </div>
         <div class="mobile-gutter">
-          <!-- hidden when in desktop query -->
-          <button aria-label="Toggle Menu" id="nav-toggle" class="button-link">
-            <span>Menu</span>
-          </button>
+          <input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
+          <label class="button-link" for="nav-toggle">
+            <p>Menu</p>
+          </label>
           <div class="nav" aria-hidden="true">
             <div class="nav-list">
-              <button aria-label="Close Menu" id="close" class="link">
-                <img src="assets/icons/cross.svg" alt="Close Menu" />
-              </button>
+              <label
+                for="nav-toggle"
+                class="link"
+                id="close"
+                aria-label="Close Menu"
+              >
+                <img src="../assets/icons/cross.svg" alt="Close Menu" />
+              </label>
               <div class="input-wrapper">
-                <img class="icon" src="assets/icons/search.svg" alt="Search" />
+                <img
+                  class="icon"
+                  src="../assets/icons/search.svg"
+                  alt="Search"
+                />
                 <input
                   type="search"
                   placeholder="Search"
