@@ -70,8 +70,23 @@ main {
   gap: 1rem;
 }
 
+.articles {
+  width: 75%;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+}
+
 @media (max-width: 480px) {
   .tile-grid {
     grid-template-columns: 1fr;
+  }
+
+  .articles {
+    width: 100%;
+  }
+
+  .articles img {
+    width: 100%;
   }
 }
