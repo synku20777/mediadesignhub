@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usability Heuristics</title>
+    <link rel="stylesheet" href="../../general-styles.css" />
+    <link rel="stylesheet" href="../../hub.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Main navigation" class="header">
+        <div class="logotype">
+          <a href="../../index.html"><h4>Design Hub</h4></a>
+        </div>
+        <div class="desktop-gutter">
+          <a href="../design.html" class="button-link" id="design">Design</a>
+          <a href="../../dev/dev.html" class="button-link" id="dev"
+            >Development</a
+          >
+        </div>
+        <div class="mobile-gutter">
+          <input type="checkbox" id="nav-toggle" class="hidden-checkbox" />
+          <label class="button-link" for="nav-toggle">
+            <p>Menu</p>
+          </label>
+          <div class="nav" aria-hidden="true">
+            <div class="nav-list">
+              <label
+                for="nav-toggle"
+                class="link"
+                id="close"
+                aria-label="Close Menu"
+              >
+                <img src="../../assets/icons/cross.svg" alt="Close Menu" />
+              </label>
+              <div class="input-wrapper">
+                <img
+                  class="icon"
+                  src="../../assets/icons/search.svg"
+                  alt="Search"
+                />
+                <input
+                  type="search"
+                  placeholder="Search"
+                  autocomplete="off"
+                  aria-label="Search"
+                />
+              </div>
+              <ul>
+                <li><a href="../design.html">Design</a></li>
+                <li><a href="../../dev/dev.html">Development</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <nav aria-label="breadcrumbs">
+        <ul class="breadcrumb">
+          <li><a class="navigation-link" href="../../index.html">Hub</a></li>
+          <li>
+            <img
+              class="icon"
+              src="../../assets/icons/chevron_right.svg"
+              alt=">"
+            />
+          </li>
+          <li><a class="navigation-link" href="../design.html">Design</a></li>
+          <li>
+            <img
+              class="icon"
+              src="../../assets/icons/chevron_right.svg"
+              alt=">"
+            />
+          </li>
+          <li>
+            <a class="navigation-link" href="../principles.html">Principles</a>
+          </li>
+          <li>
+            <img
+              class="icon"
+              src="../../assets/icons/chevron_right.svg"
+              alt=">"
+            />
+          </li>
+          <li>
+            <a class="navigation-link" href="#">Usability Heuristics</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h1 id="Principles">Usability Heuristics</h1>
+      <p>
+        Jakob Nielsen's 10 general principles for interaction design. They are
+        called "heuristics" because they are broad rules of thumb and not
+        specific usability guidelines.
+      </p>
+
+      <section class="tile-net">
+        <div class="tile-card">
+          <h4>Visibility of system status</h4>
+          <p>
+            The design should always keep users informed about what is going on,
+            through appropriate feedback within a reasonable amount of time.
+          </p>
+        </div>
+        <div class="tile-card">
+          <h4>Match between system and the real world</h4>
+          <p>
+            The design should speak the users' language. Use words, phrases, and
+            concepts familiar to the user, rather than internal jargon. Follow
+            real-world conventions, making information appear in a natural and
+            logical order.
+          </p>
+        </div>
+        <div class="tile-card">
+          <h4>User control and freedom</h4>
+          <p>
+            Users often perform actions by mistake. They need a clearly marked
+            "emergency exit" to leave the unwanted action without having to go
+            through an extended process.
+          </p>
+        </div>
+        <div class="tile-card">
+          <h4>Consistency and standards</h4>
+          <p>
+            Users should not have to wonder whether different words, situations,
+            or actions mean the same thing. Follow platform and industry
+            conventions.
+          </p>
+        </div>
+        <div class="tile-card">
+          <h4>Error prevention</h4>
+          <p>
+            Good error messages are important, but the best designs carefully
+            prevent problems from occurring in the first place. Either eliminate
+            error-prone conditions, or check for them and present users with a
+            confirmation option before they commit to the action.
+          </p>
+        </div>
+        <div class="tile-card">
+          <h4>Recognition rather than recalln</h4>
+          <p>
+            Minimize the user's memory load by making elements, actions, and
+            options visible. The user should not have to remember information
+            from one part of the interface to another. Information required to
+            use the design (e.g. field labels or menu items) should be visible
+            or easily retrievable when needed.
+          </p>
+        </div>
+        <div class="tile-card">
+          <h4>Flexibility and efficiency of use</h4>
+          <p>
+            Shortcuts — hidden from novice users — may speed up the interaction
+            for the expert user so that the design can cater to both
+            inexperienced and experienced users. Allow users to tailor frequent
+            actions.
+          </p>
+        </div>
+        <div class="tile-card">
+          <h4>Help users recognize, diagnose, and recover from errors</h4>
+          <p>
+            Error messages should be expressed in plain language (no error
+            codes), precisely indicate the problem, and constructively suggest a
+            solution.
+          </p>
+        </div>
+        <div class="tile-card">
+          <h4>Help and documentation</h4>
+          <p>
+            Its best if the system doesnt need any additional explanation.
+            However, it may be necessary to provide documentation to help users
+            understand how to complete their tasks.
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

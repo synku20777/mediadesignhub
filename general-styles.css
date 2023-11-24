@@ -150,6 +150,7 @@ nav .desktop-gutter {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .breadcrumb li {
@@ -273,7 +274,7 @@ nav .desktop-gutter {
 }
 
 main {
-  width: 85%;
+  width: 95%;
   margin-top: 4.75rem;
   display: inline-flex;
   flex-direction: column;
